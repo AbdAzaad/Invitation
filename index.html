@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="invitation.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar-Section -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#hero"><img class="nav-logo" src="images/logo.png" alt="" /></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item ">
+                        <a class="nav-link active" aria-current="page" href="#" data-toggle="modal"
+                            data-target="#CountDownModal"><span data-toggle="tooltip" data-placement="bottom"
+                                title="Wedding Count-Down"><i class="fa-solid fa-clock text-white"></i></span> </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#LocationModal"> <span
+                                data-toggle="tooltip" data-placement="bottom" title="Location"><i
+                                    class="fa-solid fa-location-dot text-white"></i></span> </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1>Wedding Invitation</h1>
+        <p>It's Happening!!</p>
+
+    </header>
+
+    <!-- Intermediate Section -->
+    <section class="intermediate">
+        <div class="row">
+            <div class="col">
+                <h3 class="welcome-quote">We invite you to share in our joy and request your presence at the Wedding.
+                </h3>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-lg-8 col-xl-7">
+                    <img src="images/couple.png" alt="">
+                </div>
+                <div class="col-md-12 col-lg-4 col-xl-5 bg-content">
+                    <h1>Abdul Kalam Azaad</h1>
+                    <h5>Weds</h5>
+                    <h1>Zainab Nausheen</h1>
+                </div>
+
+            </div>
+    </section>
+
+    <!-- Parents section -->
+    <section class="parents">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                </div>
+                <div class="col-sm-9 col-md-7 col-lg-7 col-xl-7">
+                    <h2>Mrs. & Mr. Mohamed Rafi <br>
+                        with <br>
+                        Mrs. & Mr. Taraka Seshu Siva Prasad <br>
+                        extend their warm welcome <br>
+                        to the wedding
+                    </h2>
+                    <hr>
+                    <p>At</p>
+                    <h1>Anbu Thirumana Nilayam</h1>
+                    <p>On</p>
+                    <h1>24 September 2023 <br>
+                        11:30 AM</h1>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Modal for Countdown-->
+    <div class="modal fade" id="CountDownModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+
+                    <div class="timer">
+                        <div id="countdown">
+                            <ul>
+                                <li><span id="days"></span>days</li>
+                                <li><span id="hours"></span>hours</li>
+                                <li><span id="minutes"></span>minutes</li>
+                                <li><span id="seconds"></span>seconds</li>
+                            </ul>
+                        </div>
+                        <div id="content" class="emoji">
+                            <span>🥳</span>
+                            <span>🎉</span>
+                        </div>
+                    </div>
+                    <p id="headline">Countdown for the Wedding</p>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary bg-dark" data-dismiss="modal">
+                    close
+                </button>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+    <!-- Modal for Map-->
+    <div class="modal fade" id="LocationModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <iframe id="image" width="100%" height="600" frameborder="0" scrolling="no" marginheight="0"
+                        marginwidth="0"
+                        src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Anbu%20Thirumana%20Nilayam,%20Ellaiamman%20Koil%20Street,%20Pondicherry%20%20-%20605001+(Azaad's%20Invitation)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                        <a href="https://www.maps.ie/population/">Azaad's Marriage Location</a>
+                    </iframe>
+                    Azaad-Nausheen's Marriage Location
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary bg-dark" data-dismiss="modal">
+                        close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="invitation.js" async defer></script>
+    <script src="https://kit.fontawesome.com/e20b1b2c0a.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+        </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
